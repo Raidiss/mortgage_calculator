@@ -1,0 +1,49 @@
+.calc-container {
+    margin: 50px 50px;
+    padding: 50px;
+    padding-top: 15px;
+    width: 650px;
+    height: 450px;
+    font-family: 'Raleway', sans-serif;
+    color: brown;
+    display: inline-block;
+    background-image: url("image/img4.jpg");
+    border: solid 1px;
+}
+
+#calculate-button {
+    background: brown;
+    width: 100px;
+    color: white;
+    border: solid 1px;
+}
+
+#principal {
+    width: 100px;
+}
+
+#rate {
+    width: 100px;
+}
+
+.mortgage-content-container {
+    font-family: 'Raleway', sans-serif;
+    color: brown;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#id-payment {
+    color: brown;
+    font-size: 30px;
+    font-weight: bold;
+    background: white;
+}
+
+#annual-rate {
+    width: 80px;
+}
+
+#calculate-button {
+    margin-left: 80px;
+}

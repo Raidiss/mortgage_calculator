@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Mortgage Calculator</title>
+    <link rel="stylesheet" href="mortgage.css">
+    <script type="text/javascript" src="mortgage.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="calc-container">
+        <div class="mortgage-header">
+            <h1>Online Mortgage Calculator!</h1>
+            <hr>
+        </div><br>
+        <div class="mortgage-content-container">
+            <form class="mortgage-form" action="index.html" method="post">
+                <label for="principal">Principal $</label>
+                <input id="principal" type="text">&nbsp;&nbsp;
+                <label for="term">&nbsp;Term</label>
+                <select class="term" name="term">
+            <option value="choose">Choose an option</option>
+            <option value = 30>30 Year Fixed</option>
+            <option value = 15>15 Year Fixed</option>
+          </select>&nbsp;&nbsp;
+                <label for="rate">Rate</label>
+                <input id="annual-rate" type="text"> % <br><br>
+                <input id="calculate-button" type="submit" value="Calculate" onclick="calculate">
+            </form>
+        </div><br><br>
+        <div id="monthlyPayment1" style="display: none;">
+            <h3 id="id-payment">Your Monthly Payment is: $<span id="payment">0.00</span></h3>
+        </div>
+    </div>
+</body>
+
+</html>
